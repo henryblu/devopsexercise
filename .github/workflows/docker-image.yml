@@ -2,9 +2,8 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: 
+    - main
 
 jobs:
   build:
@@ -24,4 +23,3 @@ jobs:
       with:
         push: true
         tags: henryblue/express-app:latest
-        file: express-app/Dockerfile
