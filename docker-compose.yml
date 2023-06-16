@@ -8,7 +8,7 @@ services:
     container_name: watchtower
 
   expressapp:
-    build: .
+    image: henryblue/express-app
     container_name: expressapp
     ports:
       - 8080:8080
